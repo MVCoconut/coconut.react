@@ -77,6 +77,7 @@ class Setup {
           }
       ).fields;
 
+      add[0].pos = cls.pos;
       parametrize(add[0], cls);
 
       fields.concat(add);

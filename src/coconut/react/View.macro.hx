@@ -166,7 +166,9 @@ class View {
         }
     });
 
-    parametrize(added[added.length - 1], cls);
+    var fromHxx = added[added.length - 1];
+    fromHxx.pos = cls.pos;
+    parametrize(fromHxx, cls);
 
   }
   static function autoBuild()
